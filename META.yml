@@ -1,0 +1,33 @@
+---
+abstract: 'Simple TCP-based JSONRPC client/server'
+author:
+  - 'Peter Makholm <peter@makholm.net>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 0.99'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: AnyEvent-JSONRPC
+no_index:
+  directory:
+    - examples
+    - inc
+    - t
+    - xt
+recommends:
+  JSON::XS: 0
+requires:
+  AnyEvent: 5.12
+  Filter::Util::Call: 0
+  JSON: 0
+  JSON::RPC::Common: 0
+  Moose: 0
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/pmakholm/anyevent-jsonrpc-lite-perl.git
+version: 0.13_1
