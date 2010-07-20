@@ -1,6 +1,8 @@
 package AnyEvent::JSONRPC::TCP::Server;
 use Moose;
 
+extends 'AnyEvent::JSONRPC::Server';
+
 use Carp;
 use Scalar::Util 'weaken';
 
@@ -88,6 +90,7 @@ sub BUILD {
                 $self->on_eof->(@_);
                 $h->destroy;
             },
+            json => $self->json,
             %{ $self->handler_options },
             fh => $fh,
         );
