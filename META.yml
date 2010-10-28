@@ -30,6 +30,7 @@ requires:
   JSON::XS: 2.22
   Moose: 0
 resources:
+  homepage: http://github.com/pmakholm/anyevent-jsonrpc-perl/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/pmakholm/anyevent-jsonrpc-perl.git
-version: 0.14
+version: 0.15
